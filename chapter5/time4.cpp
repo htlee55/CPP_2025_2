@@ -18,3 +18,13 @@ public:
 		cout << hour << ":" << minute << endl;
 	}
 };
+
+int main()
+{
+	Time a;					// 매개변수가 없는 생성자 호출
+	Time b(10, 25); 		// 매개변수가 있는 생성자 호출
+
+	a.print();
+	b.print();
+	return 0;
+}
