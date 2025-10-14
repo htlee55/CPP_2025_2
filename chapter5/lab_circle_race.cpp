@@ -16,8 +16,14 @@ Circle::Circle(int xval, int yval, int r)
 }
 
 void Circle::draw() {
-	HDC hdc = GetWindowDC(GetForegroundWindow());
-	Ellipse(hdc, x - radius, y - radius, x + radius, y + radius);
+    HWND hwnd = GetForegroundWindow();       // 현재 창 핸들
+    HDC hdc = GetWindowDC(hwnd);             // DC 얻기
+
+    Ellipse(hdc, x - radius, y - radius, x + radius, y + radius);
+
+    ReleaseDC(hwnd, hdc);                    // 사용한 DC 반납 (반드시!)
+}
+
 }
 
 void Circle::move() {
