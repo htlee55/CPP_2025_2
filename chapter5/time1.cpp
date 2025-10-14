@@ -11,7 +11,12 @@ public:
 	}
 };
 
-Time a;			// 객체 a를 생성한다. 
+int main()
+{
+	Time a;			// 객체 a를 생성한다. 
 
-a.hour = 26;		
-a.minute = 70;
+	a.hour = 26;
+	a.minute = 70;
+	a.print();		// a의 시와 분을 출력한다.
+	return 0;
+}
