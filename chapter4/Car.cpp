@@ -19,7 +19,7 @@ public:		// 접근지정자
 	}
 };
 
-nt main()
+int main()
 {
 	// 객체 생성
 	Car myCar;				// myCar는 Car 클래스의 자료형을 가진 변수이다.
