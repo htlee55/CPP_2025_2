@@ -3,7 +3,7 @@
 using namespace std;
 
 class Car {
-public:
+public:		// 접근지정자
 	// 멤버 변수 선언
 	int speed; // 속도
 	int gear; // 기어
@@ -21,9 +21,10 @@ public:
 
 nt main()
 {
-	Car myCar;
+	// 객체 생성
+	Car myCar;				// myCar는 Car 클래스의 자료형을 가진 변수이다.
 
-	myCar.speed = 100;
+	myCar.speed = 100;		// 체의 멤버 접근, 토트(.) 연산자 사용
 	myCar.gear = 3;
 	myCar.color = "red";
 
