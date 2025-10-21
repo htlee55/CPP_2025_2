@@ -29,9 +29,9 @@ void Time::print() {
 int main()
 {
 	Time a (24, 59);
-  ++a.hour;          //이제는 오류가 발생
+  	++a.hour;          //이제는 오류가 발생
 
-  a.inc_hour();      //안전하게 시간을 증가
+  	a.inc_hour();      //안전하게 시간을 증가
 
 	a.print();
 	return 0;
