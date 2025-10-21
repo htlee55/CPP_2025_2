@@ -35,8 +35,8 @@ void Time::print() {
 int main()
 {
 	Time a ( 0, 0 );
-  a.setHour(6);
-  a.setMinute(30);
+  	a.setHour(6);
+  	a.setMinute(30);
 
 	a.print();
 	return 0;
