@@ -1,31 +1,22 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class Character {
+class Car {
+private:
+    string brand;
+    int year;
+
 public:
-    string name;
-    int hp;
-    int attack;
+    Car(string b, int y) : brand(b), year(y) {}
 
-    void printStatus() {
-        cout << name << ", HP: " << hp << ", Attack: " << attack << endl;
-    }
-
-    void takeDamage(int damage) {
-        hp -= damage;
-        if (hp < 0) hp = 0;
+    void displayInfo() {
+        cout << year << " " << brand << endl;
     }
 };
 
 int main() {
-    Character hero;
-    hero.name = "Knight";
-    hero.hp = 100;
-    hero.attack = 20;
-
-    hero.printStatus();
-    hero.takeDamage(30);
-    hero.printStatus();
-
+    Car myCar("Toyota", 2022);
+    myCar.displayInfo();   // 출력: 2022 Toyota
     return 0;
 }
