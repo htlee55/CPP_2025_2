@@ -2,6 +2,6 @@
 using namespace std;
 
 int main() {
-    cout << "Game System Start" << endl;
+    cout << "Hello, C++ World!" << endl;
     return 0;
 }
